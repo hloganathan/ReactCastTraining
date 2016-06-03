@@ -4,7 +4,7 @@ var GithubUtils = require('../utils/GithubUtils');
 
 var GithubActions = {
   getUserBio: function(username){
-    GithubUtils.getBio(username)
+    GithubUtils.getBio(username) // promise obj
       .then(function(response){
         AppDispatcher.handleAction({
             actionType: AppConstants.GITHUB_USER_BIO,

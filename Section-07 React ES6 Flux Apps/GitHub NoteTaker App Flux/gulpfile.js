@@ -11,7 +11,6 @@ var DEST = 'dist/js';
 
 gulp.task('build', function(){
      gulp.src(SRC)
-
     .pipe(browserify({transform: 'reactify'})) // bundeling & transforming 
     .pipe(concat(OUT))
     .pipe(gulp.dest(DEST));

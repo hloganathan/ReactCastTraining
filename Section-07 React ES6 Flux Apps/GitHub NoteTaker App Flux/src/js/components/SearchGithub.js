@@ -13,6 +13,7 @@ var SearchGithub = React.createClass({
     var username = this.state.username;
     this.setState({username: ''});
     this.transitionTo('profile', {username: username});
+    // ptofile
   },
   render: function(){
     return (

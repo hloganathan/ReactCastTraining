@@ -1,0 +1,69 @@
+{
+  "name": "react-jest-example",
+  "version": "0.0.0",
+  "description": "react and jest example",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+     "test": "./node_modules/jest-cli/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/securingsincity/react-jest-example.git"
+  },
+  "keywords": [
+    "jest"
+  ],
+  "author": "James Hrisho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/securingsincity/react-jest-example/issues"
+  },
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "react": "~0.13.0",
+    "react-tools": "^0.13.0"
+  },
+  "devDependencies": {
+    "browserify": "~4.1.5",
+    "browserify-shim": "~3.5.0",
+    "gulp": "~3.5.0",
+    "gulp-concat": "~2.1.7",
+    "gulp-connect": "~1.0.0",
+    "gulp-connect-multi": "^1.0.8",
+    "gulp-jade": "~0.4.2",
+    "gulp-jshint": "~1.4.0",
+    "gulp-load-plugins": "~0.3.0",
+    "gulp-react": "~0.2.0",
+    "gulp-rename": "~1.1.0",
+    "gulp-sass": "~0.7.1",
+    "gulp-shell": "^0.2.7",
+    "gulp-size": "~0.1.3",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "~0.2.1",
+    "gulp-util": "~2.2.9",
+    "jest-cli": "^0.4.0",
+    "react-tools": "*",
+    "reactify": "^0.17.1",
+    "vinyl-source-stream": "~0.1.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "rootDir": "app",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/node_modules/"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "homepage": "https://github.com/securingsincity/react-jest-example"
+}
